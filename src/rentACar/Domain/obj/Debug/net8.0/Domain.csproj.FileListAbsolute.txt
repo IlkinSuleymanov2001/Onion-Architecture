@@ -1,0 +1,15 @@
+C:\Users\ilkin\source\repos\onionproject\src\rentACar\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ilkin\source\repos\onionproject\src\rentACar\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\ilkin\source\repos\onionproject\src\rentACar\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\ilkin\source\repos\onionproject\src\rentACar\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\ilkin\source\repos\onionproject\src\rentACar\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\ilkin\source\repos\onionproject\src\rentACar\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\ilkin\source\repos\onionproject\src\rentACar\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\ilkin\source\repos\onionproject\src\rentACar\Domain\bin\Debug\net8.0\Core.Persistence.dll
+C:\Users\ilkin\source\repos\onionproject\src\rentACar\Domain\bin\Debug\net8.0\Core.Persistence.pdb
+C:\Users\ilkin\source\repos\onionproject\src\rentACar\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\Users\ilkin\source\repos\onionproject\src\rentACar\Domain\obj\Debug\net8.0\Domain.csproj.CopyComplete
+C:\Users\ilkin\source\repos\onionproject\src\rentACar\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\ilkin\source\repos\onionproject\src\rentACar\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\ilkin\source\repos\onionproject\src\rentACar\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\ilkin\source\repos\onionproject\src\rentACar\Domain\obj\Debug\net8.0\ref\Domain.dll
