@@ -71,6 +71,18 @@
           }
         }
       },
+      "FluentValidation.DependencyInjectionExtensions/10.3.6": {
+        "dependencies": {
+          "FluentValidation": "10.3.6",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "10.3.6.0"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
@@ -801,17 +813,25 @@
           }
         }
       },
-      "Serilog/2.10.0": {
+      "Otp.NET/1.2.2": {
         "runtime": {
-          "lib/netstandard2.1/Serilog.dll": {
+          "lib/netstandard2.0/Otp.NET.dll": {
+            "assemblyVersion": "1.2.2.0",
+            "fileVersion": "1.2.2.0"
+          }
+        }
+      },
+      "Serilog/3.1.1": {
+        "runtime": {
+          "lib/net7.0/Serilog.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.10.0.0"
+            "fileVersion": "3.1.1.0"
           }
         }
       },
       "Serilog.Sinks.File/5.0.0": {
         "dependencies": {
-          "Serilog": "2.10.0"
+          "Serilog": "3.1.1"
         },
         "runtime": {
           "lib/net5.0/Serilog.Sinks.File.dll": {
@@ -1124,6 +1144,7 @@
       "Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "Core.Application": "1.0.0",
           "Core.CrossCuttingConcerns": "1.0.0",
           "Core.Persistence": "1.0.0",
           "Domain": "1.0.0",
@@ -1133,12 +1154,26 @@
           "Application.dll": {}
         }
       },
+      "Core.Application/1.0.0": {
+        "dependencies": {
+          "Core.CrossCuttingConcerns": "1.0.0",
+          "Core.Security": "1.0.0",
+          "FluentValidation": "10.3.6",
+          "FluentValidation.DependencyInjectionExtensions": "10.3.6",
+          "MediatR": "12.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Caching.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "Core.Application.dll": {}
+        }
+      },
       "Core.CrossCuttingConcerns/1.0.0": {
         "dependencies": {
           "FluentValidation": "10.3.6",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.Extensions.Configuration.Binder": "8.0.1",
-          "Serilog": "2.10.0",
+          "Serilog": "3.1.1",
           "Serilog.Sinks.File": "5.0.0"
         },
         "runtime": {
@@ -1152,6 +1187,19 @@
         },
         "runtime": {
           "Core.Persistence.dll": {}
+        }
+      },
+      "Core.Security/1.0.0": {
+        "dependencies": {
+          "Core.Persistence": "1.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "8.0.1",
+          "Microsoft.IdentityModel.Tokens": "6.35.0",
+          "Otp.NET": "1.2.2",
+          "System.IdentityModel.Tokens.Jwt": "6.35.0"
+        },
+        "runtime": {
+          "Core.Security.dll": {}
         }
       },
       "Domain/1.0.0": {
@@ -1208,6 +1256,13 @@
       "sha512": "sha512-iMd370ZDx6ydm8t7bIFdRbSKX0e42lpvCtifUSbTSXOk5iKjmgl7HU0PXBhIWQAyIRi3gCwfMI9luj8H6K+byw==",
       "path": "fluentvalidation/10.3.6",
       "hashPath": "fluentvalidation.10.3.6.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/10.3.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yMwmbr+sHP/VLRQPTBVcgbJmtP5PGmxzNsqVX7FccDRwDB2edP8XsXWLNTZ4UwrslU1qQUD07BNQLDh7WXzpNw==",
+      "path": "fluentvalidation.dependencyinjectionextensions/10.3.6",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1664,12 +1719,19 @@
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
     },
-    "Serilog/2.10.0": {
+    "Otp.NET/1.2.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+QX0hmf37a0/OZLxM3wL7V6/ADvC1XihXN4Kq/p6d8lCPfgkRdiuhbWlMaFjR9Av0dy5F0+MBeDmDdRZN/YwQA==",
-      "path": "serilog/2.10.0",
-      "hashPath": "serilog.2.10.0.nupkg.sha512"
+      "sha512": "sha512-2hrZfkbzeWJ3tNXXt/1beg4IY+nS4F3gIfh4NVFvW0f6Pj51hGpiJ4prBz7Dmrr4ZYrA96rTERVGieZ4xYm7jA==",
+      "path": "otp.net/1.2.2",
+      "hashPath": "otp.net.1.2.2.nupkg.sha512"
+    },
+    "Serilog/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P6G4/4Kt9bT635bhuwdXlJ2SCqqn2nhh4gqFqQueCOr9bK/e7W9ll/IoX1Ter948cV2Z/5+5v8pAfJYUISY03A==",
+      "path": "serilog/3.1.1",
+      "hashPath": "serilog.3.1.1.nupkg.sha512"
     },
     "Serilog.Sinks.File/5.0.0": {
       "type": "package",
@@ -1963,12 +2025,22 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Core.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Core.CrossCuttingConcerns/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "Core.Persistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Core.Security/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

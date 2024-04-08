@@ -20,7 +20,7 @@ namespace Persistence.Contexts
             //optionsBuilder.UseSqlServer(Configuration.GetConnectionString("RentACar"));
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void  OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Brand>(a => { 
                     a.ToTable("Brands").HasKey(k=>k.Id);

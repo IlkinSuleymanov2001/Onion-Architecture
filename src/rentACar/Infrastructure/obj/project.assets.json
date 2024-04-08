@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\ilkin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,17 +1,106 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ilkin\\source\\repos\\onionproject\\WebAPI\\WebAPI.csproj": {}
+    "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ilkin\\source\\repos\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.CrossCuttingConcers\\Core.CrossCuttingConcerns.csproj": {
+    "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Application\\Core.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ilkin\\source\\repos\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.CrossCuttingConcers\\Core.CrossCuttingConcerns.csproj",
-        "projectName": "Core.CrossCuttingConcerns",
-        "projectPath": "C:\\Users\\ilkin\\source\\repos\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.CrossCuttingConcers\\Core.CrossCuttingConcerns.csproj",
+        "projectUniqueName": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Application\\Core.Application.csproj",
+        "projectName": "Core.Application",
+        "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Application\\Core.Application.csproj",
         "packagesPath": "C:\\Users\\ilkin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ilkin\\source\\repos\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.CrossCuttingConcers\\obj\\",
+        "outputPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ilkin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.CrossCuttingConcers\\Core.CrossCuttingConcerns.csproj": {
+                "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.CrossCuttingConcers\\Core.CrossCuttingConcerns.csproj"
+              },
+              "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Security\\Core.Security.csproj": {
+                "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Security\\Core.Security.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.6, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[10.3.6, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.CrossCuttingConcers\\Core.CrossCuttingConcerns.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.CrossCuttingConcers\\Core.CrossCuttingConcerns.csproj",
+        "projectName": "Core.CrossCuttingConcerns",
+        "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.CrossCuttingConcers\\Core.CrossCuttingConcerns.csproj",
+        "packagesPath": "C:\\Users\\ilkin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.CrossCuttingConcers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -86,14 +175,14 @@
         }
       }
     },
-    "C:\\Users\\ilkin\\source\\repos\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj": {
+    "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ilkin\\source\\repos\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj",
         "projectName": "Core.Persistence",
-        "projectPath": "C:\\Users\\ilkin\\source\\repos\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj",
+        "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj",
         "packagesPath": "C:\\Users\\ilkin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ilkin\\source\\repos\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\obj\\",
+        "outputPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -156,14 +245,14 @@
         }
       }
     },
-    "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Application\\Application.csproj": {
+    "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Security\\Core.Security.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Application\\Application.csproj",
-        "projectName": "Application",
-        "projectPath": "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Security\\Core.Security.csproj",
+        "projectName": "Core.Security",
+        "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Security\\Core.Security.csproj",
         "packagesPath": "C:\\Users\\ilkin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Application\\obj\\",
+        "outputPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Security\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -185,14 +274,103 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ilkin\\source\\repos\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.CrossCuttingConcers\\Core.CrossCuttingConcerns.csproj": {
-                "projectPath": "C:\\Users\\ilkin\\source\\repos\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.CrossCuttingConcers\\Core.CrossCuttingConcerns.csproj"
+              "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj": {
+                "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.15.1, )"
+            },
+            "Otp.NET": {
+              "target": "Package",
+              "version": "[1.2.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\ilkin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ilkin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Application\\Core.Application.csproj": {
+                "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Application\\Core.Application.csproj"
               },
-              "C:\\Users\\ilkin\\source\\repos\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj": {
-                "projectPath": "C:\\Users\\ilkin\\source\\repos\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj"
+              "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.CrossCuttingConcers\\Core.CrossCuttingConcerns.csproj": {
+                "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.CrossCuttingConcers\\Core.CrossCuttingConcerns.csproj"
               },
-              "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Domain\\Domain.csproj"
+              "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj": {
+                "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj"
+              },
+              "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Domain\\Domain.csproj"
               }
             }
           }
@@ -236,14 +414,14 @@
         }
       }
     },
-    "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Domain\\Domain.csproj": {
+    "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\ilkin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -265,8 +443,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ilkin\\source\\repos\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj": {
-                "projectPath": "C:\\Users\\ilkin\\source\\repos\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj"
+              "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj": {
+                "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj"
               }
             }
           }
@@ -300,14 +478,14 @@
         }
       }
     },
-    "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\ilkin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -329,14 +507,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ilkin\\source\\repos\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj": {
-                "projectPath": "C:\\Users\\ilkin\\source\\repos\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj"
+              "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj": {
+                "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionprojectnorthwind\\Kodlama.io.Devs\\corePackages\\Core.Persistence\\Core.Persistence.csproj"
               },
-              "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Application\\Application.csproj"
+              "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Application\\Application.csproj"
               },
-              "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Domain\\Domain.csproj"
+              "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Domain\\Domain.csproj"
               }
             }
           }
@@ -376,14 +554,14 @@
         }
       }
     },
-    "C:\\Users\\ilkin\\source\\repos\\onionproject\\WebAPI\\WebAPI.csproj": {
+    "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ilkin\\source\\repos\\onionproject\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\ilkin\\source\\repos\\onionproject\\WebAPI\\WebAPI.csproj",
+        "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\WebAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\ilkin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ilkin\\source\\repos\\onionproject\\WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -405,8 +583,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\ilkin\\source\\repos\\onionproject\\src\\rentACar\\Persistence\\Persistence.csproj"
+              "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\ilkin\\source\\repos\\ilkin\\onionproject\\src\\rentACar\\Persistence\\Persistence.csproj"
               }
             }
           }

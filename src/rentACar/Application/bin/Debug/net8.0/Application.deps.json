@@ -9,6 +9,7 @@
       "Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "Core.Application": "1.0.0",
           "Core.CrossCuttingConcerns": "1.0.0",
           "Core.Persistence": "1.0.0",
           "Domain": "1.0.0",
@@ -32,6 +33,18 @@
       "FluentValidation/10.3.6": {
         "runtime": {
           "lib/net6.0/FluentValidation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "10.3.6.0"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/10.3.6": {
+        "dependencies": {
+          "FluentValidation": "10.3.6",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "10.3.6.0"
           }
@@ -270,26 +283,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.0.1": {
-        "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Dynamic.Runtime": "4.0.11",
-          "System.Globalization": "4.0.11",
-          "System.Linq": "4.1.0",
-          "System.Linq.Expressions": "4.1.0",
-          "System.ObjectModel": "4.0.12",
-          "System.Reflection": "4.1.0",
-          "System.Reflection.Extensions": "4.0.1",
-          "System.Reflection.Primitives": "4.0.1",
-          "System.Reflection.TypeExtensions": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Runtime.InteropServices": "4.1.0",
-          "System.Threading": "4.0.11"
-        }
-      },
+      "Microsoft.CSharp/4.5.0": {},
       "Microsoft.DotNet.PlatformAbstractions/2.1.0": {
         "dependencies": {
           "System.AppContext": "4.1.0",
@@ -490,6 +484,38 @@
           }
         }
       },
+      "Microsoft.IdentityModel.JsonWebTokens/6.8.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "6.15.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "assemblyVersion": "6.8.0.0",
+            "fileVersion": "6.8.0.11012"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Logging/6.15.1": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {
+            "assemblyVersion": "6.15.1.0",
+            "fileVersion": "6.15.1.30119"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/6.15.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "Microsoft.IdentityModel.Logging": "6.15.1",
+          "System.Security.Cryptography.Cng": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {
+            "assemblyVersion": "6.15.1.0",
+            "fileVersion": "6.15.1.30119"
+          }
+        }
+      },
       "Microsoft.Net.Http.Headers/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "8.0.0",
@@ -506,7 +532,7 @@
       "Microsoft.NETCore.Targets/1.0.1": {},
       "Newtonsoft.Json/9.0.1": {
         "dependencies": {
-          "Microsoft.CSharp": "4.0.1",
+          "Microsoft.CSharp": "4.5.0",
           "System.Collections": "4.0.11",
           "System.Diagnostics.Debug": "4.0.11",
           "System.Dynamic.Runtime": "4.0.11",
@@ -536,23 +562,31 @@
           }
         }
       },
+      "Otp.NET/1.2.2": {
+        "runtime": {
+          "lib/netstandard2.0/Otp.NET.dll": {
+            "assemblyVersion": "1.2.2.0",
+            "fileVersion": "1.2.2.0"
+          }
+        }
+      },
       "runtime.native.System/4.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
           "Microsoft.NETCore.Targets": "1.0.1"
         }
       },
-      "Serilog/2.10.0": {
+      "Serilog/3.1.1": {
         "runtime": {
-          "lib/netstandard2.1/Serilog.dll": {
+          "lib/net7.0/Serilog.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.10.0.0"
+            "fileVersion": "3.1.1.0"
           }
         }
       },
       "Serilog.Sinks.File/5.0.0": {
         "dependencies": {
-          "Serilog": "2.10.0"
+          "Serilog": "3.1.1"
         },
         "runtime": {
           "lib/net5.0/Serilog.Sinks.File.dll": {
@@ -613,6 +647,18 @@
           "Microsoft.NETCore.Platforms": "1.0.1",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
+        }
+      },
+      "System.IdentityModel.Tokens.Jwt/6.8.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "6.8.0",
+          "Microsoft.IdentityModel.Tokens": "6.15.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {
+            "assemblyVersion": "6.8.0.0",
+            "fileVersion": "6.8.0.11012"
+          }
         }
       },
       "System.IO/4.1.0": {
@@ -798,6 +844,7 @@
           "System.Runtime": "4.1.0"
         }
       },
+      "System.Security.Cryptography.Cng/4.5.0": {},
       "System.Text.Encoding/4.0.11": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -873,12 +920,26 @@
           "System.Xml.ReaderWriter": "4.0.11"
         }
       },
+      "Core.Application/1.0.0": {
+        "dependencies": {
+          "Core.CrossCuttingConcerns": "1.0.0",
+          "Core.Security": "1.0.0",
+          "FluentValidation": "10.3.6",
+          "FluentValidation.DependencyInjectionExtensions": "10.3.6",
+          "MediatR": "12.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Caching.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "Core.Application.dll": {}
+        }
+      },
       "Core.CrossCuttingConcerns/1.0.0": {
         "dependencies": {
           "FluentValidation": "10.3.6",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.Extensions.Configuration.Binder": "8.0.1",
-          "Serilog": "2.10.0",
+          "Serilog": "3.1.1",
           "Serilog.Sinks.File": "5.0.0"
         },
         "runtime": {
@@ -892,6 +953,19 @@
         },
         "runtime": {
           "Core.Persistence.dll": {}
+        }
+      },
+      "Core.Security/1.0.0": {
+        "dependencies": {
+          "Core.Persistence": "1.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "8.0.1",
+          "Microsoft.IdentityModel.Tokens": "6.15.1",
+          "Otp.NET": "1.2.2",
+          "System.IdentityModel.Tokens.Jwt": "6.8.0"
+        },
+        "runtime": {
+          "Core.Security.dll": {}
         }
       },
       "Domain/1.0.0": {
@@ -923,6 +997,13 @@
       "sha512": "sha512-iMd370ZDx6ydm8t7bIFdRbSKX0e42lpvCtifUSbTSXOk5iKjmgl7HU0PXBhIWQAyIRi3gCwfMI9luj8H6K+byw==",
       "path": "fluentvalidation/10.3.6",
       "hashPath": "fluentvalidation.10.3.6.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/10.3.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yMwmbr+sHP/VLRQPTBVcgbJmtP5PGmxzNsqVX7FccDRwDB2edP8XsXWLNTZ4UwrslU1qQUD07BNQLDh7WXzpNw==",
+      "path": "fluentvalidation.dependencyinjectionextensions/10.3.6",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512"
     },
     "MediatR/12.2.0": {
       "type": "package",
@@ -1050,12 +1131,12 @@
       "path": "microsoft.aspnetcore.webutilities/2.2.0",
       "hashPath": "microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512"
     },
-    "Microsoft.CSharp/4.0.1": {
+    "Microsoft.CSharp/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-17h8b5mXa87XYKrrVqdgZ38JefSUqLChUQpXgSnpzsM0nDOhE40FTeNWOJ/YmySGV6tG6T8+hjz6vxbknHJr6A==",
-      "path": "microsoft.csharp/4.0.1",
-      "hashPath": "microsoft.csharp.4.0.1.nupkg.sha512"
+      "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+      "path": "microsoft.csharp/4.5.0",
+      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
     },
     "Microsoft.DotNet.PlatformAbstractions/2.1.0": {
       "type": "package",
@@ -1183,6 +1264,27 @@
       "path": "microsoft.extensions.primitives/8.0.0",
       "hashPath": "microsoft.extensions.primitives.8.0.0.nupkg.sha512"
     },
+    "Microsoft.IdentityModel.JsonWebTokens/6.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+7JIww64PkMt7NWFxoe4Y/joeF7TAtA/fQ0b2GFGcagzB59sKkTt/sMZWR6aSZht5YC7SdHi3W6yM1yylRGJCQ==",
+      "path": "microsoft.identitymodel.jsonwebtokens/6.8.0",
+      "hashPath": "microsoft.identitymodel.jsonwebtokens.6.8.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Logging/6.15.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PpZHL/Bt/8vQ8g/6LxweuI1EusV0ogUBYnGM+bPeL/SG89gx2n05xKNE/U5JNEkLFLL+sk7O8T7c/PXhFtUtUg==",
+      "path": "microsoft.identitymodel.logging/6.15.1",
+      "hashPath": "microsoft.identitymodel.logging.6.15.1.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Tokens/6.15.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0bd0ocKuNai0/GdhboIW37R6z8I0vFqlmiPeG055SJxPPJ7dfBo2tjJ3bPV9vjFCRDuusj24dldOsg4hWui6iw==",
+      "path": "microsoft.identitymodel.tokens/6.15.1",
+      "hashPath": "microsoft.identitymodel.tokens.6.15.1.nupkg.sha512"
+    },
     "Microsoft.Net.Http.Headers/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -1211,6 +1313,13 @@
       "path": "newtonsoft.json/9.0.1",
       "hashPath": "newtonsoft.json.9.0.1.nupkg.sha512"
     },
+    "Otp.NET/1.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2hrZfkbzeWJ3tNXXt/1beg4IY+nS4F3gIfh4NVFvW0f6Pj51hGpiJ4prBz7Dmrr4ZYrA96rTERVGieZ4xYm7jA==",
+      "path": "otp.net/1.2.2",
+      "hashPath": "otp.net.1.2.2.nupkg.sha512"
+    },
     "runtime.native.System/4.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1218,12 +1327,12 @@
       "path": "runtime.native.system/4.0.0",
       "hashPath": "runtime.native.system.4.0.0.nupkg.sha512"
     },
-    "Serilog/2.10.0": {
+    "Serilog/3.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+QX0hmf37a0/OZLxM3wL7V6/ADvC1XihXN4Kq/p6d8lCPfgkRdiuhbWlMaFjR9Av0dy5F0+MBeDmDdRZN/YwQA==",
-      "path": "serilog/2.10.0",
-      "hashPath": "serilog.2.10.0.nupkg.sha512"
+      "sha512": "sha512-P6G4/4Kt9bT635bhuwdXlJ2SCqqn2nhh4gqFqQueCOr9bK/e7W9ll/IoX1Ter948cV2Z/5+5v8pAfJYUISY03A==",
+      "path": "serilog/3.1.1",
+      "hashPath": "serilog.3.1.1.nupkg.sha512"
     },
     "Serilog.Sinks.File/5.0.0": {
       "type": "package",
@@ -1287,6 +1396,13 @@
       "sha512": "sha512-B95h0YLEL2oSnwF/XjqSWKnwKOy/01VWkNlsCeMTFJLLabflpGV26nK164eRs5GiaRSBGpOxQ3pKoSnnyZN5pg==",
       "path": "system.globalization/4.0.11",
       "hashPath": "system.globalization.4.0.11.nupkg.sha512"
+    },
+    "System.IdentityModel.Tokens.Jwt/6.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5tBCjAub2Bhd5qmcd0WhR5s354e4oLYa//kOWrkX+6/7ZbDDJjMTfwLSOiZ/MMpWdE4DWPLOfTLOq/juj9CKzA==",
+      "path": "system.identitymodel.tokens.jwt/6.8.0",
+      "hashPath": "system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512"
     },
     "System.IO/4.1.0": {
       "type": "package",
@@ -1435,6 +1551,13 @@
       "path": "system.runtime.serialization.primitives/4.1.1",
       "hashPath": "system.runtime.serialization.primitives.4.1.1.nupkg.sha512"
     },
+    "System.Security.Cryptography.Cng/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
+      "path": "system.security.cryptography.cng/4.5.0",
+      "hashPath": "system.security.cryptography.cng.4.5.0.nupkg.sha512"
+    },
     "System.Text.Encoding/4.0.11": {
       "type": "package",
       "serviceable": true,
@@ -1498,12 +1621,22 @@
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
     },
+    "Core.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Core.CrossCuttingConcerns/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "Core.Persistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Core.Security/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
